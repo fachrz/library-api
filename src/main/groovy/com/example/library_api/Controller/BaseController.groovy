@@ -1,4 +1,4 @@
-package com.example.library_api.controller
+package com.example.library_api.Controller
 
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
