@@ -1,0 +1,930 @@
+{
+	"info": {
+		"_postman_id": "61ee52bb-1dd1-4bee-b975-4e6b694ad4a3",
+		"name": "Library API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25942148"
+	},
+	"item": [
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "Books",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/books",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Books Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/books",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2024 03:41:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 16,\n        \"name\": \"Learn Java - Book 1\",\n        \"isbn\": \"1234567891\",\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Computer Science\"\n        }\n    },\n    {\n        \"id\": 17,\n        \"name\": \"Learn Java - Book 2\",\n        \"isbn\": \"1234567892\",\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Computer Science\"\n        }\n    },\n    {\n        \"id\": 18,\n        \"name\": \"Learn Java - Book 3\",\n        \"isbn\": \"1234567893\",\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Computer Science\"\n        }\n    },\n    {\n        \"id\": 19,\n        \"name\": \"Learn Java - Book 4\",\n        \"isbn\": \"1234567894\",\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Computer Science\"\n        }\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Learn Java - Book 5\",\n        \"isbn\": \"1234567895\",\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Computer Science\"\n        }\n    },\n    {\n        \"id\": 21,\n        \"name\": \"Literature Masterpieces - Book 1\",\n        \"isbn\": \"9876543211\",\n        \"category\": {\n            \"id\": 2,\n            \"name\": \"Sastra\"\n        }\n    },\n    {\n        \"id\": 22,\n        \"name\": \"Literature Masterpieces - Book 2\",\n        \"isbn\": \"9876543212\",\n        \"category\": {\n            \"id\": 2,\n            \"name\": \"Sastra\"\n        }\n    },\n    {\n        \"id\": 23,\n        \"name\": \"Literature Masterpieces - Book 3\",\n        \"isbn\": \"9876543213\",\n        \"category\": {\n            \"id\": 2,\n            \"name\": \"Sastra\"\n        }\n    },\n    {\n        \"id\": 24,\n        \"name\": \"Literature Masterpieces - Book 4\",\n        \"isbn\": \"9876543214\",\n        \"category\": {\n            \"id\": 2,\n            \"name\": \"Sastra\"\n        }\n    },\n    {\n        \"id\": 25,\n        \"name\": \"Literature Masterpieces - Book 5\",\n        \"isbn\": \"9876543215\",\n        \"category\": {\n            \"id\": 2,\n            \"name\": \"Sastra\"\n        }\n    },\n    {\n        \"id\": 26,\n        \"name\": \"Comic Collection - Book 1\",\n        \"isbn\": \"1112131411\",\n        \"category\": {\n            \"id\": 3,\n            \"name\": \"Komik\"\n        }\n    },\n    {\n        \"id\": 27,\n        \"name\": \"Comic Collection - Book 2\",\n        \"isbn\": \"1112131412\",\n        \"category\": {\n            \"id\": 3,\n            \"name\": \"Komik\"\n        }\n    },\n    {\n        \"id\": 28,\n        \"name\": \"Comic Collection - Book 3\",\n        \"isbn\": \"1112131413\",\n        \"category\": {\n            \"id\": 3,\n            \"name\": \"Komik\"\n        }\n    },\n    {\n        \"id\": 29,\n        \"name\": \"Comic Collection - Book 4\",\n        \"isbn\": \"1112131414\",\n        \"category\": {\n            \"id\": 3,\n            \"name\": \"Komik\"\n        }\n    },\n    {\n        \"id\": 30,\n        \"name\": \"Comic Collection - Book 5\",\n        \"isbn\": \"1112131415\",\n        \"category\": {\n            \"id\": 3,\n            \"name\": \"Komik\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Book",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/books/16",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"16"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Book Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/books/16",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books",
+										"16"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2024 03:42:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 16,\n    \"name\": \"Learn Java - Book 1\",\n    \"isbn\": \"1234567891\",\n    \"category\": {\n        \"id\": 1,\n        \"name\": \"Computer Science\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Store Book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Introduction to Java Spring Boot\",\n  \"isbn\": \"9876543210\",\n  \"category\": {\n    \"id\": 1\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/books",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Store Book Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Introduction to Java Spring Boot\",\n  \"isbn\": \"9876543210\",\n  \"category\": {\n    \"id\": 1\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/books",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2024 03:45:26 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 31,\n    \"name\": \"Introduction to Java Spring Boot\",\n    \"isbn\": \"9876543210\",\n    \"category\": {\n        \"id\": 1,\n        \"name\": \"Computer Science\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Book",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Introduction to java spring boot with groovy\",\n  \"isbn\": \"1122334455\",\n  \"category\": {\n    \"id\": 1\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/books/31",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"31"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Book Response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Introduction to java spring boot with groovy\",\n  \"isbn\": \"1122334455\",\n  \"category\": {\n    \"id\": 1\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/books/31",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books",
+										"31"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2024 03:47:24 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 31,\n    \"name\": \"Introduction to java spring boot with groovy\",\n    \"isbn\": \"1122334455\",\n    \"category\": {\n        \"id\": 1,\n        \"name\": \"Computer Science\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Book",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/books/28",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"28"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Book Response",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/books/28",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books",
+										"28"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2024 03:49:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Book deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Categories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/categories",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Categories response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/categories",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2024 02:56:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Komputer\",\n        \"books\": [\n            {\n                \"id\": 1,\n                \"name\": \"Learn Java - Book 1\",\n                \"isbn\": \"1234567891\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Learn Java - Book 2\",\n                \"isbn\": \"1234567892\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Learn Java - Book 3\",\n                \"isbn\": \"1234567893\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Learn Java - Book 4\",\n                \"isbn\": \"1234567894\"\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Learn Java - Book 5\",\n                \"isbn\": \"1234567895\"\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Sastra\",\n        \"books\": [\n            {\n                \"id\": 6,\n                \"name\": \"Literature Masterpieces - Book 1\",\n                \"isbn\": \"9876543211\"\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Literature Masterpieces - Book 2\",\n                \"isbn\": \"9876543212\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Literature Masterpieces - Book 3\",\n                \"isbn\": \"9876543213\"\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Literature Masterpieces - Book 4\",\n                \"isbn\": \"9876543214\"\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Literature Masterpieces - Book 5\",\n                \"isbn\": \"9876543215\"\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Komik\",\n        \"books\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/categories/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Category response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/categories/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2024 03:08:53 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Komputer\",\n    \"books\": [\n        {\n            \"id\": 1,\n            \"name\": \"Learn Java - Book 1\",\n            \"isbn\": \"1234567891\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Learn Java - Book 2\",\n            \"isbn\": \"1234567892\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Learn Java - Book 3\",\n            \"isbn\": \"1234567893\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Learn Java - Book 4\",\n            \"isbn\": \"1234567894\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Learn Java - Book 5\",\n            \"isbn\": \"1234567895\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Store Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Filsafat\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/categories",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Category insert response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Filsafat\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/categories",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2024 03:14:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category created successfully\",\n    \"category\": {\n        \"id\": 5,\n        \"name\": \"Filsafat\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Computer Science\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/categories/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Category Response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Computer Science\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/categories/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2024 03:17:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category updated successfully\",\n    \"category\": {\n        \"id\": 1,\n        \"name\": \"Computer Science\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/categories/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categories",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Category",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/categories/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"categories",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Dec 2024 03:20:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
